@@ -1,0 +1,15 @@
+/**
+ * @file
+ * JavaScript for triggering opening of colorbox when link or button is clicked.
+ */
+
+(function ($) {
+  'use strict';
+  Drupal.behaviors.openColorbox = {
+    attach: function (context, drupalSettings) {            
+        $('#open-colorbox-trigger', context).click(function () {
+          $('.colorbox').colorbox({open:true});
+      })
+    }
+  };
+})(jQuery);

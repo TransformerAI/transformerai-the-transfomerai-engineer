@@ -1,0 +1,32 @@
+(function ($, Drupal, drupalSettings, once) {
+  Drupal.behaviors.select2_simple = {
+    attach: function (context) {
+      if (drupalSettings.select2_simple && drupalSettings.select2_simple.selector) {
+
+        $(once('select2-simple', drupalSettings.select2_simple.selector)).each(function () {
+          // Remove "- None -" option because it's added automatically as selected
+          // option which is confusing.
+          $(this).filter('[multiple="multiple"]').each(function () {
+            $('option[value="_none"]', this).remove();
+          });
+
+          // Initialze Select2 separetly for single selects and multi selects so
+          // we can provide slightly different config.
+          // Intentionally not restricting this selector to the passed in context.
+          // If we did that, the configured set of selectors may not work because they
+          // may be scoped to an element outside of the context. It should be OK
+          // without it, since we're using the once() plugin to ensure we only
+          // initialize the plugin once on an element anyway.
+          $(this).filter('[multiple]').select2({
+            minimumResultsForSearch: 10,
+            placeholder: '- Select -',
+          });
+
+          $(this).not('[multiple]').select2({
+            minimumResultsForSearch: 10,
+          });
+        });
+      }
+    }
+  };
+})(jQuery, Drupal, drupalSettings, once);

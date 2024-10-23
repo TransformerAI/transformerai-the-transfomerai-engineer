@@ -1,0 +1,5 @@
+@media (min-width: 62rem) {
+.content-type-ua-field-of-study .node__content .fos-detail-main {
+    flex: 0 0 100%;
+}
+}

@@ -1,0 +1,62 @@
+/**
+ * @file
+ * Contains JS functionality for Fields of Study detail pages.
+ */
+
+(function (Drupal, Tabby, once) {
+  'use strict';
+  Drupal.behaviors.fields_of_study_detail = {
+    attach: function (context, settings) {
+      // Check that we have at least one tab before continuing.
+      if (document.getElementById('prog-offering-1')) {
+
+        const fieldsOfStudyPage = once('fos-page-behaviors', '.node--type-ua-field-of-study');
+        fieldsOfStudyPage.forEach(function (el) {
+          // Initialze tabs for the program offerings, but only if we're not
+          // on the page dump page. On the page dump page, we want the contents
+          // of each tab always shown, so there is CSS to hide the tabs.
+          if (window.location.pathname !== '/page-dump') {
+            // Initialize Tabby tabs for each program offering.
+            new Tabby(document.querySelector('.fos-detail-prog-offerings-tabs'), {
+              default: '.tabby-first'
+            });
+          }
+          else {
+            // On the page dump page, we want to show the labels for each
+            // program offering. They're there in the DOM, but we want to
+            // convert them to H3s instead of divs. We also prepend
+            // Program Offering to each offering and hide the main Program
+            // Offerings heading so it's clearer.
+            el.querySelectorAll('.field--name-field-ua-dar-degree').forEach(function (offeringField) {
+              const replacement = document.createElement('h2');
+              replacement.textContent = 'Program Offering: ' + offeringField.textContent;
+              replacement.classList = offeringField.classList;
+              offeringField.replaceWith(replacement);
+            });
+            el.querySelector('.fos-detail-program-offerings-label').remove();
+          }
+        });
+      }
+
+      // Get the elements using class names
+      const targetDiv = document.querySelector(".jump-link-menu-horizontal");
+      const list = document.querySelector(".jump-link-menu__nav-wrapper ul");
+
+      // Function to add a class to the target div when the ul is empty
+      function addClassToDivIfEmpty() {
+        if (list.children.length === 0) {
+          targetDiv.classList.add("empty-ul");
+        } else {
+          targetDiv.classList.remove("empty-ul");
+        }
+      }
+
+      // Initial check when the page loads
+      addClassToDivIfEmpty();
+
+      // Additionally, you can listen for changes to the ul element and update the class accordingly
+      list.addEventListener("DOMSubtreeModified", addClassToDivIfEmpty);
+
+      }
+    };
+}(Drupal, Tabby, once));

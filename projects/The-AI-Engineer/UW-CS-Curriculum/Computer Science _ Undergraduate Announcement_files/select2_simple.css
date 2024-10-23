@@ -1,0 +1,5 @@
+/* Increase z-index on select2 dropdown so it works with Drupal's modal
+   dialogs, which have a high z-index on them. */
+.select2-dropdown {
+  z-index: 10002;
+}
