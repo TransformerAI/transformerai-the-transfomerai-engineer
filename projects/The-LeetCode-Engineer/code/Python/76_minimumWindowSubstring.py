@@ -2,16 +2,6 @@
 from utils_code.constraints.predicate import predicate
 
 class Solution:
-    def handleConstraints(self, s, t):
-        m = len(s)
-        n = len(t)
-        predicate(lambda: 1 <= m and n <= 105, None, "1 <= m and n <= 105")
-        predicate(lambda: 
-            any(c.isupper() for c in s) and 
-            any(c.islower() for c in s) and 
-            any(c.isupper() for c in t) and
-            any(c.islower() for c in t), None, "s and t must consist of uppercase and lowercase English letters.") 
-    
     def minWindow(self, s: str, t: str) -> str:        
         if t == "": return ""
         countT, window = {}, {}
