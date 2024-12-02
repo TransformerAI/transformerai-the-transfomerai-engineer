@@ -11,7 +11,7 @@ Definition of a Transformer AI Engineer's Knowledge Repository, resident within 
 ### The AI Engineer
 A Book about what it means to be an AI Engineer
 
-   CS + Math + DataScience + 
+   CS + Math + DataScience + LeetCode + Machined Development
    - CS
    - Mathematical Foundations
       - Algebra, I,II
