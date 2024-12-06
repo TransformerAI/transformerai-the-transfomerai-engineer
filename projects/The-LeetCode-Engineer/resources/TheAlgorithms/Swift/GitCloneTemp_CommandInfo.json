@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Swift undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Swift",
+    "repo": "https://github.com/TheAlgorithms/Swift",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Swift",
+    "startTime": "2024-08-16T05:01:36.898Z",
+    "endTime": "2024-08-16T05:01:37.842Z",
+    "childProcessPid": 3228,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Swift--3228",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/AArch64_Assembly undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/AArch64_Assembly",
+    "repo": "https://github.com/TheAlgorithms/AArch64_Assembly",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/AArch64_Assembly",
+    "startTime": "2024-08-16T04:57:57.490Z",
+    "endTime": "2024-08-16T04:57:58.280Z",
+    "childProcessPid": 2410,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--AArch64_Assembly--2410",
+    "executionErrors": []
+}

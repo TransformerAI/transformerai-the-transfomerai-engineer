@@ -1,0 +1,56 @@
+name: Directory writer
+on:
+  schedule:
+  #        ┌───────────── minute (0 - 59)
+  #        │  ┌───────────── hour (0 - 23)
+  #        │  │ ┌───────────── day of the month (1 - 31)
+  #        │  │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+  #        │  │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+  #        │  │ │ │ │
+  #        │  │ │ │ │
+  #        │  │ │ │ │
+  #        *  * * * *
+  - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    if: github.repository == 'TheAlgorithms/Jule' # We only need this to run in our repository.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Panquesito7/setup-jule@v1.1.3
+        with:
+          version: dev
+          directory: ..
+          add-to-path: true
+      - name: Compile Directory Writer
+        run: |
+          julec -o ./directory_writer ./.github/workflows
+          git update-index --add --chmod=-x ./directory_writer
+          chmod +x ./directory_writer
+      - name: Generate Directory
+        run: |
+          ./directory_writer
+      - name: Cleanup
+        run: |
+          rm -rf ./jule
+          rm -f ./directory_writer
+      - name: Setup Git configurations
+        run: |
+          git config --global user.name github-actions[bot]
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Commit and push changes
+        run: |
+          if [[ `git status --porcelain` ]];
+          then
+            git checkout -b directory_update-${{ github.sha }}
+            git add .
+
+            git commit -m 'Update `DIRECTORY.md`' || true
+            git push origin directory_update-${{ github.sha }}:directory_update-${{ github.sha }} || true
+
+            gh pr create --base ${GITHUB_REF##*/} --head directory_update-${{ github.sha }} --title 'Update `DIRECTORY.md`' --body 'Updated the `DIRECTORY.md` file (see the diff. for changes).' || true
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}

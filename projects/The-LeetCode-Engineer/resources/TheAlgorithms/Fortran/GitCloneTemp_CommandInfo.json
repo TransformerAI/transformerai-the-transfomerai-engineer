@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Fortran undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Fortran",
+    "repo": "https://github.com/TheAlgorithms/Fortran",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Fortran",
+    "startTime": "2024-08-16T05:01:09.056Z",
+    "endTime": "2024-08-16T05:01:09.677Z",
+    "childProcessPid": 2678,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Fortran--2678",
+    "executionErrors": []
+}

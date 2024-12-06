@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Ruby undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Ruby",
+    "repo": "https://github.com/TheAlgorithms/Ruby",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Ruby",
+    "startTime": "2024-08-16T05:01:31.373Z",
+    "endTime": "2024-08-16T05:01:32.375Z",
+    "childProcessPid": 3096,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Ruby--3096",
+    "executionErrors": []
+}

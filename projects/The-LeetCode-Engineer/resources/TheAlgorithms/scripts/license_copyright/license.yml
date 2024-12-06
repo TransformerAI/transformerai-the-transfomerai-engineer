@@ -1,0 +1,38 @@
+name: 'Update copyright license'
+description: Updates copyright license year automatically
+author: "TheAlgorithms"
+inputs:
+  filename:
+    description: "License filename"
+    required: true
+    default: LICENSE
+initial_year:
+    description: "Year of the repository's creation"
+    required: true
+    default: 2016
+runs:
+  using: composite
+  steps:
+    - name: Update the License
+      run: |
+        (echo "Copyright (C) ${{ inputs.initial_year }}-$(date +"%Y") TheAlgorithms and contributors";  tail -n +2 ${{ inputs.filename }}) > License.tmp
+        mv License.tmp ${{ inputs.filename }}
+    - name: Setup Git configurations
+      shell: bash
+      run: |
+        git config --global user.name github-actions[bot]
+        git config --global user.email 'github-actions@users.noreply.github.com'
+    - name: Commit to a new branch and push changes
+      shell: bash
+      run: |
+        git checkout -b license-update-${{ github.sha }}
+        git commit -m "docs: updating copyright license year"
+        git push origin license-update-${{ github.sha }}:license-update-${{ github.sha }}
+    - name: Creating a PR
+      shell: bash
+      run: |
+        if [[ $(git log --branches --not --remotes) ]]; then
+          gh pr create --base ${GITHUB_REF##*/} --head license-update-${{ github.sha }} --title 'docs: updating `License` copyright' --body 'Updated License copyright (see the diff. for changes).'
+        fi
+      env:
+        GH_TOKEN: ${{ github.token }}

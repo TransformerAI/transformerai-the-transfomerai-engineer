@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Personalised-Discounts undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Personalised-Discounts",
+    "repo": "https://github.com/TheAlgorithms/Personalised-Discounts",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Personalised-Discounts",
+    "startTime": "2024-08-16T05:01:27.849Z",
+    "endTime": "2024-08-16T05:01:28.404Z",
+    "childProcessPid": 3030,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Personalised-Discounts--3030",
+    "executionErrors": []
+}

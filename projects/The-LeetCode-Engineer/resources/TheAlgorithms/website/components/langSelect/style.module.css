@@ -1,0 +1,14 @@
+.menu {
+  z-index: 99999 !important;
+}
+
+.menu [role=menu] {
+  padding-inline-end: 17px;
+  padding-right: 0px !important;
+}
+
+.icon {
+  width: 35px;
+  height: 25px;
+  object-fit: cover;
+}

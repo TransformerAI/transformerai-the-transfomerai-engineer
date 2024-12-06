@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/TypeScript undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/TypeScript",
+    "repo": "https://github.com/TheAlgorithms/TypeScript",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/TypeScript",
+    "startTime": "2024-08-16T05:01:39.033Z",
+    "endTime": "2024-08-16T05:01:40.012Z",
+    "childProcessPid": 3272,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--TypeScript--3272",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/C-Sharp undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/C-Sharp",
+    "repo": "https://github.com/TheAlgorithms/C-Sharp",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/C-Sharp",
+    "startTime": "2024-08-16T05:01:03.568Z",
+    "endTime": "2024-08-16T05:01:04.768Z",
+    "childProcessPid": 2524,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--C-Sharp--2524",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Julia undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Julia",
+    "repo": "https://github.com/TheAlgorithms/Julia",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Julia",
+    "startTime": "2024-08-16T05:01:16.928Z",
+    "endTime": "2024-08-16T05:01:18.078Z",
+    "childProcessPid": 2832,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Julia--2832",
+    "executionErrors": []
+}

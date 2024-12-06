@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Algorithms-Explanation undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Algorithms-Explanation",
+    "repo": "https://github.com/TheAlgorithms/Algorithms-Explanation",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Algorithms-Explanation",
+    "startTime": "2024-08-16T04:57:58.280Z",
+    "endTime": "2024-08-16T04:58:04.302Z",
+    "childProcessPid": 2432,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Algorithms-Explanation--2432",
+    "executionErrors": []
+}

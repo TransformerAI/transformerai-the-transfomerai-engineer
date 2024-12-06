@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/deque undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/deque",
+    "repo": "https://github.com/datastructures-js/deque",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/deque",
+    "startTime": "2024-08-20T14:46:25.303Z",
+    "endTime": "2024-08-20T14:46:26.150Z",
+    "childProcessPid": 5289,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--deque--5289",
+    "executionErrors": []
+}

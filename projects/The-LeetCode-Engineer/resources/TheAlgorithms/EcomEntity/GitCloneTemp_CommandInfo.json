@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/EcomEntity undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/EcomEntity",
+    "repo": "https://github.com/TheAlgorithms/EcomEntity",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/EcomEntity",
+    "startTime": "2024-08-16T05:01:06.409Z",
+    "endTime": "2024-08-16T05:01:06.965Z",
+    "childProcessPid": 2590,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--EcomEntity--2590",
+    "executionErrors": []
+}

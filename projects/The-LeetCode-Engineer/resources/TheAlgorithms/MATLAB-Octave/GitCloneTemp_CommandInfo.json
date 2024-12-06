@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/MATLAB-Octave undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/MATLAB-Octave",
+    "repo": "https://github.com/TheAlgorithms/MATLAB-Octave",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/MATLAB-Octave",
+    "startTime": "2024-08-16T05:01:21.707Z",
+    "endTime": "2024-08-16T05:01:24.924Z",
+    "childProcessPid": 2920,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--MATLAB-Octave--2920",
+    "executionErrors": []
+}

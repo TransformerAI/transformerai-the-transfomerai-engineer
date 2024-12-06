@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Kotlin undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Kotlin",
+    "repo": "https://github.com/TheAlgorithms/Kotlin",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Kotlin",
+    "startTime": "2024-08-16T05:01:19.984Z",
+    "endTime": "2024-08-16T05:01:20.833Z",
+    "childProcessPid": 2876,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Kotlin--2876",
+    "executionErrors": []
+}

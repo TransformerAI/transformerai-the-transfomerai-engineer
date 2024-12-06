@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Lua undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Lua",
+    "repo": "https://github.com/TheAlgorithms/Lua",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Lua",
+    "startTime": "2024-08-16T05:01:20.833Z",
+    "endTime": "2024-08-16T05:01:21.707Z",
+    "childProcessPid": 2898,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Lua--2898",
+    "executionErrors": []
+}

@@ -1,0 +1,8 @@
+#build test
+
+use std::testing::{T}
+
+#test
+fn testFact(t: &T) {
+    t.Assert(Fact(10) == 3628800, "10 fact should equal to 3628800")
+}

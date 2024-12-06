@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Jupyter undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Jupyter",
+    "repo": "https://github.com/TheAlgorithms/Jupyter",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Jupyter",
+    "startTime": "2024-08-16T05:01:18.079Z",
+    "endTime": "2024-08-16T05:01:19.984Z",
+    "childProcessPid": 2854,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Jupyter--2854",
+    "executionErrors": []
+}

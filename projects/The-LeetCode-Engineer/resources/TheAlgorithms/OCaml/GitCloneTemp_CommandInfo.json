@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/OCaml undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/OCaml",
+    "repo": "https://github.com/TheAlgorithms/OCaml",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/OCaml",
+    "startTime": "2024-08-16T05:01:26.392Z",
+    "endTime": "2024-08-16T05:01:26.951Z",
+    "childProcessPid": 2986,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--OCaml--2986",
+    "executionErrors": []
+}

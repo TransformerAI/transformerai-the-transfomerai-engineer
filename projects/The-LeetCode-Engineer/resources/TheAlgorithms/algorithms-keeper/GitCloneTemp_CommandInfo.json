@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/algorithms-keeper undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/algorithms-keeper",
+    "repo": "https://github.com/TheAlgorithms/algorithms-keeper",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/algorithms-keeper",
+    "startTime": "2024-08-16T05:01:41.237Z",
+    "endTime": "2024-08-16T05:01:42.202Z",
+    "childProcessPid": 3336,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--algorithms-keeper--3336",
+    "executionErrors": []
+}

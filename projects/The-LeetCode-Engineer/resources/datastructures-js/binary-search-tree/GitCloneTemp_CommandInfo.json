@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/binary-search-tree undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/binary-search-tree",
+    "repo": "https://github.com/datastructures-js/binary-search-tree",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/binary-search-tree",
+    "startTime": "2024-08-20T14:46:21.875Z",
+    "endTime": "2024-08-20T14:46:23.192Z",
+    "childProcessPid": 5223,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--binary-search-tree--5223",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Rust undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Rust",
+    "repo": "https://github.com/TheAlgorithms/Rust",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Rust",
+    "startTime": "2024-08-16T05:01:32.375Z",
+    "endTime": "2024-08-16T05:01:33.549Z",
+    "childProcessPid": 3118,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Rust--3118",
+    "executionErrors": []
+}

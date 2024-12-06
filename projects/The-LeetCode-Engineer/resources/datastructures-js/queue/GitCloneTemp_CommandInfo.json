@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/queue undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/queue",
+    "repo": "https://github.com/datastructures-js/queue",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/queue",
+    "startTime": "2024-08-20T14:46:30.108Z",
+    "endTime": "2024-08-20T14:46:30.965Z",
+    "childProcessPid": 5401,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--queue--5401",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/stack undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/stack",
+    "repo": "https://github.com/datastructures-js/stack",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/stack",
+    "startTime": "2024-08-20T14:46:31.878Z",
+    "endTime": "2024-08-20T14:46:32.688Z",
+    "childProcessPid": 5445,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--stack--5445",
+    "executionErrors": []
+}

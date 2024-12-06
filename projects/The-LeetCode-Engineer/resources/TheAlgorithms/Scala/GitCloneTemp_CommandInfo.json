@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Scala undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Scala",
+    "repo": "https://github.com/TheAlgorithms/Scala",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Scala",
+    "startTime": "2024-08-16T05:01:33.549Z",
+    "endTime": "2024-08-16T05:01:34.464Z",
+    "childProcessPid": 3140,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Scala--3140",
+    "executionErrors": []
+}

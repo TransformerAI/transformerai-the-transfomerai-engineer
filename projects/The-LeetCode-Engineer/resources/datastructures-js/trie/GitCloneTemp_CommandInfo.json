@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/trie undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/trie",
+    "repo": "https://github.com/datastructures-js/trie",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/trie",
+    "startTime": "2024-08-20T14:46:32.689Z",
+    "endTime": "2024-08-20T14:46:33.489Z",
+    "childProcessPid": 5467,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--trie--5467",
+    "executionErrors": []
+}

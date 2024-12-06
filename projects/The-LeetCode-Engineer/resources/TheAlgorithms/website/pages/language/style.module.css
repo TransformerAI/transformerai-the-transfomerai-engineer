@@ -1,0 +1,13 @@
+.titleContainer {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.titleContainer > div > a {
+  margin-inline-start: 20px !important;
+}
+
+.icon {
+  margin-inline-end: 12px;
+}

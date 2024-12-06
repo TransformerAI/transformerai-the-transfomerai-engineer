@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Nim undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Nim",
+    "repo": "https://github.com/TheAlgorithms/Nim",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Nim",
+    "startTime": "2024-08-16T05:01:25.579Z",
+    "endTime": "2024-08-16T05:01:26.391Z",
+    "childProcessPid": 2964,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Nim--2964",
+    "executionErrors": []
+}

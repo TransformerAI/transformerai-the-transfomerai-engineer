@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/JavaScript undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/JavaScript",
+    "repo": "https://github.com/TheAlgorithms/JavaScript",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/JavaScript",
+    "startTime": "2024-08-16T05:01:14.836Z",
+    "endTime": "2024-08-16T05:01:16.193Z",
+    "childProcessPid": 2788,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--JavaScript--2788",
+    "executionErrors": []
+}

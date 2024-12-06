@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Solidity undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Solidity",
+    "repo": "https://github.com/TheAlgorithms/Solidity",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Solidity",
+    "startTime": "2024-08-16T05:01:35.586Z",
+    "endTime": "2024-08-16T05:01:36.898Z",
+    "childProcessPid": 3206,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Solidity--3206",
+    "executionErrors": []
+}

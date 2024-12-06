@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Google-Summer-of-Code undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Google-Summer-of-Code",
+    "repo": "https://github.com/TheAlgorithms/Google-Summer-of-Code",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Google-Summer-of-Code",
+    "startTime": "2024-08-16T05:01:11.432Z",
+    "endTime": "2024-08-16T05:01:12.075Z",
+    "childProcessPid": 2722,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Google-Summer-of-Code--2722",
+    "executionErrors": []
+}

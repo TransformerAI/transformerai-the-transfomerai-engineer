@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Jule undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Jule",
+    "repo": "https://github.com/TheAlgorithms/Jule",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Jule",
+    "startTime": "2024-08-16T05:01:16.193Z",
+    "endTime": "2024-08-16T05:01:16.928Z",
+    "childProcessPid": 2810,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Jule--2810",
+    "executionErrors": []
+}

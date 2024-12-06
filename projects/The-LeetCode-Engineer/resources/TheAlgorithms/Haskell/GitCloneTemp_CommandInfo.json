@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Haskell undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Haskell",
+    "repo": "https://github.com/TheAlgorithms/Haskell",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Haskell",
+    "startTime": "2024-08-16T05:01:12.075Z",
+    "endTime": "2024-08-16T05:01:13.248Z",
+    "childProcessPid": 2744,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Haskell--2744",
+    "executionErrors": []
+}

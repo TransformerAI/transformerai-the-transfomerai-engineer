@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/SessionGuard-Core undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/SessionGuard-Core",
+    "repo": "https://github.com/TheAlgorithms/SessionGuard-Core",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/SessionGuard-Core",
+    "startTime": "2024-08-16T05:01:34.464Z",
+    "endTime": "2024-08-16T05:01:35.024Z",
+    "childProcessPid": 3162,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--SessionGuard-Core--3162",
+    "executionErrors": []
+}

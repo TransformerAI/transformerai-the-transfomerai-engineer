@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/PHP undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/PHP",
+    "repo": "https://github.com/TheAlgorithms/PHP",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/PHP",
+    "startTime": "2024-08-16T05:01:26.952Z",
+    "endTime": "2024-08-16T05:01:27.848Z",
+    "childProcessPid": 3008,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--PHP--3008",
+    "executionErrors": []
+}

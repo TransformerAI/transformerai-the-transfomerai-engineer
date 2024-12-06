@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Elixir undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Elixir",
+    "repo": "https://github.com/TheAlgorithms/Elixir",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Elixir",
+    "startTime": "2024-08-16T05:01:06.966Z",
+    "endTime": "2024-08-16T05:01:07.676Z",
+    "childProcessPid": 2612,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Elixir--2612",
+    "executionErrors": []
+}

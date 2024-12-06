@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Java undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Java",
+    "repo": "https://github.com/TheAlgorithms/Java",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Java",
+    "startTime": "2024-08-16T05:01:13.248Z",
+    "endTime": "2024-08-16T05:01:14.835Z",
+    "childProcessPid": 2766,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Java--2766",
+    "executionErrors": []
+}

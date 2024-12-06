@@ -1,0 +1,8 @@
+#build test
+
+use std::testing::{T}
+
+#test
+fn testReverse(t: &T) {
+    t.Assert(Reverse("FooBar") == "raBooF", "FooBar should return raBooF")
+}

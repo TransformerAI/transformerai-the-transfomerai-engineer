@@ -1,0 +1,14 @@
+name: DIRECTORY.md workflow
+on: [workflow_dispatch]
+jobs:
+  directory_builder:
+    runs-on: ubuntu-latest
+    name: Verify the DIRECTORY.md workflow works
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./directory_md
+        with:
+          language: scripts
+          working-directory: ./test
+          filetypes: .cpp,.hpp
+          branch-name: directory-update

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Elm undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Elm",
+    "repo": "https://github.com/TheAlgorithms/Elm",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Elm",
+    "startTime": "2024-08-16T05:01:07.677Z",
+    "endTime": "2024-08-16T05:01:08.283Z",
+    "childProcessPid": 2634,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Elm--2634",
+    "executionErrors": []
+}

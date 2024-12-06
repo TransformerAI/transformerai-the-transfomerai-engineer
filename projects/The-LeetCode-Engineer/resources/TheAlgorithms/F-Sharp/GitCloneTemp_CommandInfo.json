@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/F-Sharp undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/F-Sharp",
+    "repo": "https://github.com/TheAlgorithms/F-Sharp",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/F-Sharp",
+    "startTime": "2024-08-16T05:01:08.283Z",
+    "endTime": "2024-08-16T05:01:09.056Z",
+    "childProcessPid": 2656,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--F-Sharp--2656",
+    "executionErrors": []
+}

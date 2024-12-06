@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Mojo undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Mojo",
+    "repo": "https://github.com/TheAlgorithms/Mojo",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Mojo",
+    "startTime": "2024-08-16T05:01:24.924Z",
+    "endTime": "2024-08-16T05:01:25.578Z",
+    "childProcessPid": 2942,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Mojo--2942",
+    "executionErrors": []
+}

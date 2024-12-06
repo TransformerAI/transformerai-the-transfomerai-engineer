@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/datastructures-js/graph undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/graph",
+    "repo": "https://github.com/datastructures-js/graph",
+    "targetPath": "undefined\\data--08-20-2024--v4rVdwPf3rGuZV2oaKS2A6/graph",
+    "startTime": "2024-08-20T14:46:26.151Z",
+    "endTime": "2024-08-20T14:46:27.068Z",
+    "childProcessPid": 5311,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--datastructures-js--graph--5311",
+    "executionErrors": []
+}

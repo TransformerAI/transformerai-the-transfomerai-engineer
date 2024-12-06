@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Clojure undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Clojure",
+    "repo": "https://github.com/TheAlgorithms/Clojure",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Clojure",
+    "startTime": "2024-08-16T05:01:04.768Z",
+    "endTime": "2024-08-16T05:01:05.471Z",
+    "childProcessPid": 2546,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Clojure--2546",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/website undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/website",
+    "repo": "https://github.com/TheAlgorithms/website",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/website",
+    "startTime": "2024-08-16T05:01:44.183Z",
+    "endTime": "2024-08-16T05:01:47.176Z",
+    "childProcessPid": 3402,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--website--3402",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/C-Plus-Plus undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/C-Plus-Plus",
+    "repo": "https://github.com/TheAlgorithms/C-Plus-Plus",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/C-Plus-Plus",
+    "startTime": "2024-08-16T04:58:06.391Z",
+    "endTime": "2024-08-16T05:01:02.127Z",
+    "childProcessPid": 2476,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--C-Plus-Plus--2476",
+    "executionErrors": []
+}

@@ -1,0 +1,67 @@
+name: "Build directory file"
+description: "Builds a DIRECTORY.md file with all the algorithms in one repository."
+author: "TheAlgorithms"
+inputs:
+  language:
+    description: The language used in your repository
+    required: true
+  working-directory:
+    description: Working/base directory of the script
+    required: true
+    default: .
+  filetypes:
+    description: Allowed filenames to check in (comma separated values in a string). Can have unlimited filetypes. E.g. `.cpp,.hpp,.h`
+    required: true
+  ignored-directories:
+    description: Files or folders to ignore, separated by commas.
+    required: false
+  ignore-folders-children:
+    description: Folders to ignore, but include children.
+    required: false
+  branch-name:
+    description: The branch that will be used to push changes.
+    required: false
+    default: directory-update
+runs:
+  using: composite
+  steps:
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+    - name: Setup Git configurations
+      shell: bash
+      run: |
+        git config --global user.name github-actions[bot]
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Running the directory builder
+      shell: bash
+      run: |
+        # If branch exists, change to that branch to prevent multiple committing/PR creation.
+        git checkout ${{ inputs.branch-name }} || true
+
+        python ${{ github.action_path }}/build_directory_md.py ${{ inputs.language }} ${{ inputs.working-directory }} ${{ inputs.filetypes }} ${{ inputs.ignored-directories }} ${{ inputs.ignore-folders-children }} > DIRECTORY.md
+    - name: Creating a branch
+      shell: bash
+      run: |
+        git branch ${{ inputs.branch-name }} || true
+        git checkout ${{ inputs.branch-name }} || true
+
+    - name: Committing, pushing, and creating a PR
+      shell: bash
+      run: |
+        if [[ `git status --porcelain` ]];
+        then
+
+          git add DIRECTORY.md
+
+          git commit -m "docs: update DIRECTORY.md" || true
+          git push origin ${{ inputs.branch-name }}:${{ inputs.branch-name }} --force-with-lease
+
+          gh pr create --base ${GITHUB_REF##*/} --head ${{ inputs.branch-name }} --title 'docs: updating `DIRECTORY.md`' --body 'Updated the `DIRECTORY.md` file (see the diff. for changes).' || true
+          # Using `true` will make sure no errors are displayed even if there's a PR created.
+        fi
+      env:
+        GH_TOKEN: ${{ github.token }}

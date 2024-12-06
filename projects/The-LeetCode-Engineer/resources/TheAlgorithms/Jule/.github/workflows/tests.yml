@@ -1,0 +1,45 @@
+name: Tests
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Panquesito7/setup-jule@v1.1.3
+        with:
+          version: dev
+          directory: .
+          add-to-path: true
+          extra-command: version
+
+      - name: Test - math
+        run: |
+          julec test -o test math
+          git update-index --add --chmod=-x test
+          chmod +x test
+          ./test
+
+      - name: Test - search
+        run: |
+          julec test -o test search
+          git update-index --add --chmod=-x test
+          chmod +x test
+          ./test
+
+      - name: Test - sort
+        run: |
+          julec test -o test sort
+          git update-index --add --chmod=-x test
+          chmod +x test
+          ./test
+
+      - name: Test - string
+        run: |
+          julec test -o test string
+          git update-index --add --chmod=-x test
+          chmod +x test
+          ./test

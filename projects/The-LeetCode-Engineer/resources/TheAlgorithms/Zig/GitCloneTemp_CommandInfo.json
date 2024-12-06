@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Zig undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Zig",
+    "repo": "https://github.com/TheAlgorithms/Zig",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Zig",
+    "startTime": "2024-08-16T05:01:40.012Z",
+    "endTime": "2024-08-16T05:01:40.805Z",
+    "childProcessPid": 3294,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Zig--3294",
+    "executionErrors": []
+}

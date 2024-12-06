@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/TheAlgorithms/Go undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Go",
+    "repo": "https://github.com/TheAlgorithms/Go",
+    "targetPath": "undefined\\TA--08-15-2024--dHhEwSc16ZoLusWFnL7VUq/Go",
+    "startTime": "2024-08-16T05:01:09.678Z",
+    "endTime": "2024-08-16T05:01:11.432Z",
+    "childProcessPid": 2700,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/Neur/resources/code/workingdir/--TheAlgorithms--Go--2700",
+    "executionErrors": []
+}

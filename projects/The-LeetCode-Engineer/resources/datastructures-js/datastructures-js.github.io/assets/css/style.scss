@@ -1,0 +1,134 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#container {
+  background: none !important;
+}
+
+header {
+  display: flex;
+
+  h1 {
+    font-size: 3em !important;
+    font-weight: 500 !important;
+    font-family: Arial !important;
+  }
+
+  h2 {
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+    font-family: Arial !important;
+  }
+
+  .logo {
+    width: 15%;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-image: url('{{ site.baseurl }}/assets/images/ds-logo-1.png');
+    margin-right: 20px;
+  }
+
+  .github-button a {
+    margin-left: -10px;
+    display: block;
+    background-image: url('{{ site.baseurl }}/assets/images/view_on_github.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 140px;
+    outline: 0;
+  }
+
+  .header-text {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
+
+.button {
+  padding: 10px 5px !important;
+}
+
+.ds-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  .ds-category {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 25px 20px;
+
+    .ds-page {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.ds-badges {
+  margin-top: 10px;
+}
+
+.problem {
+  font-size: 1.05em;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #666;
+  background-color: #f4f4f4;
+  padding: 15px 10px;
+  font-weight: 400;
+}
+
+.problem:before {
+  content: '→';
+  padding-right: 10px;
+}
+
+.problem-separator {
+  margin-top: 50px;
+}
+
+.problems {
+  display: flex;
+  direction: row;
+  flex-wrap: wrap;
+}
+
+.problems div {
+  margin-right: 30px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #969494;
+  width: 100%;
+
+  div {
+    margin-right: 10px;
+  }
+
+  div.next:after {
+    content: '/'
+  }
+}
+
+.footer-icon {
+  color: red;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}

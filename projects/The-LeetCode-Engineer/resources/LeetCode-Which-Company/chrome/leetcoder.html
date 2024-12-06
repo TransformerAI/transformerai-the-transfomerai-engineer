@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CrackTech-LeetCode Company Tag, DSA Preparation</title>
+    <script type="text/javascript" src="script/Chart.min.js"></script>
+    <style></style>
+    <link rel="stylesheet" href="script/sde_sheet.style.css">
+</head>
+<body>
+    <div class="content-container" style="margin: 0 auto;">
+        <div id="noticeListContainer"></div>
+		<div class="intro-content-1" style="font-family: 'Segoe UI'; font-size: medium; display: flex; margin-top: 15px;">
+            <div class="content-left-part" style="width: 50%; padding-right:2%;">
+                <h1 style="text-align: center;">WORK HARD, PREPARE HARDER</h1>
+                <p>Thank you for using <i>CrackTech-LeetCode Company Tag, DSA Preparation</i> extension.<br>
+                    This is a small effort to help you in your dream company specific preparation. Track your progress and prepare with famous SDE sheets.
+                    <br>
+                    Do consider sharing this free extension among your fellow LeetCoders. I feel it will be helpful for them as well.
+                </p>
+            </div>
+            <div class="empty" style="border: 2px solid black;"></div>
+            <div class = "content-right-part" style="float: right; padding-left: 2%;">
+                <div class="header">
+                    <p style="font-size: 12px; font-weight: bold;">Don't Miss Upcoming Contest(s)</p>
+                    <div class="switch">
+                        <span class="switch-text">Get Notified: </span>
+                        <label class="notify-checkbox">
+                            <input type="checkbox" id="notificationCheckbox" checked>
+                            <span class="checkbox"></span>
+                        </label>
+                        <p>[&nbsp;</p><i><span id="switchStatus">Turned On</span></i><p> &nbsp;]</p>
+                    </div>
+                </div>
+                <table id="contestTable">
+                    <tr id = "ptable-tr">
+                        <th id = "ptable-td">Name</th>
+                        <th id = "ptable-td">Start Date</th>
+                        <th id = "ptable-td">Start Time</th>
+                        <th id = "ptable-td">Duration</th>
+                    </tr>
+                </table>
+                <table id="nbtable" style="margin: 0 auto;">
+                    <tr id = "ptable-tr">
+                        <td id = "ptable-td" style="border: none;"><i><b>** Note: Contest information will update around 8AM everyday.</b></i></td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+        <hr>
+        <div class="quick-access-panel">
+            <h2 style="text-align: center; font-family: Segoe UI;">Quick Access Panel</h2>
+            <div class="useful-content-item" style="display: flex; align-items: center; justify-content: center;">
+                <div class="content-item">
+                    <a href="index.html" target="_blank">
+                        <center><img src="res/access-info.png" alt="Access Company Information"></center>
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="https://forms.gle/cAW1jxYxUTwgUmMd9" target="_blank">
+                        <center><img src="res/share-feedback.png" alt="Share Your Feedback"></center>
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="about.html" target="_blank">
+                        <center><img src="res/about-me.png" alt="about me"></center>
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="https://www.buymeacoffee.com/ssavi" target="_blank">
+                        <center><img src="res/buy-me-a-coffee.png" alt="Buy Me A Coffee"></center>
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="https://github.com/ssavi-ict/LeetCode-Which-Company/" target="_blank">
+                        <center><img src="res/project-source.png" alt="Go To Project Source"></center>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="stat-container-complete">
+            <div id="stat-container-header-text">
+                <h3>Ace Your Next DSA Round with popular SDE Sheets</h3>
+            </div>
+            <div class = "stat-container">
+                <div class="sde-sheet-container">
+                    <div class="select-container">
+                        <label for="jsonSelector" class="label-select"><span>&#187;</span> Currently Selected : &nbsp; &nbsp;</label>
+                        <select id="jsonSelector" class="custom-select">
+                            <option value="striver">Striver SDE Sheet</option>
+                            <option value="blind75">Blind75 SDE Sheet</option>
+                            <option value="neetcode">Neetcode SDE Sheet</option>
+                        </select>
+                    </div>
+            
+                    <div class="custom-table-container" id="tableContainer"></div>
+            
+                    <div class="reset-button-container">
+                        <div>
+                            <label class="reset-label">Reset Your Progress?</label>
+                        </div>
+                        <div>
+                            <button id="currentSheetButton" class="reset-button">Current Sheet</button>
+                            <button id="allSheetsButton" class="reset-button">All Sheets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-floated-rectangle">
+                    <!-- Content for the right-floated rectangle -->
+                    <div class="sheet-status-header">
+                        <h3 style="text-align: center;">Completion Summary</h5>
+                    </div>
+                    <hr>
+                    <div>
+                    <p id="striverCount">Striver SDE Sheet (0/0)</p>
+                        <div class="progress">
+                            <div id="striverProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="blind75Count">Blind75 SDE Sheet (0/0)</p>
+                        <div class="progress">
+                            <div id="blind75ProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div>
+                    <p id="neetcodeCount">NeetCode SDE Sheet (0/0)</p>
+                        <div class="progress">
+                            <div id="neetcodeProgressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div id = "readyStatus" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+		<div class="preparation-container" id="cracktech-preparation-container">
+            <div class = "preparation-header-content">
+                <h3 id = "heading-line"></h3> 
+            </div>
+            <div class = "preparation-main-content" style="display: flex; flex-wrap: wrap;" >
+                <div class = "left-side-div"  style="width: 20%; display:inline-block;">
+                    <table id = "user-summary-table" style="width:100%; border: 1px solid black; border-radius: 3px;">
+                        <tr id = "ptable-tr">
+                            <th id = "ptable-td" colspan="2" style="background-color: #2196F3;"><center>User Summary</center></th>
+                        </tr>
+                    </table>
+                    <br>
+                    <div style="width: 60%; height: 135px; text-align: center; margin-left: 5%; display: block; margin: 0 auto;">
+                        <b id="pTitle"></b>
+                        <br>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+
+                <fieldset style="width: 74%; float: right; margin-top: 9px; margin-left: 15px; display: flex; flex-wrap: wrap;">
+                    <legend id ="legend-text" style="font-size:20px; text-align: center;"> &#128187; <i>Next <a href="https://leetcode.com/" target="_blank"><b>LeetCode</b></a> Problem(s) To Solve</i> &#128187; </legend>
+
+                    <div class="child-div">
+                        <table id="easy-table" style="width:95%; border: 1px solid black; border-radius: 5px;">
+                            <tr id = "ptable-tr">
+                                <th id = "easy_title_header_text" style="text-align: center; background-color: #00AF9B; width: 96%;"></th>
+                                <th id = "ptable-td" style="text-align: center; background-color: #00AF9B;">
+                                    <button title="Reload Different Problems" id="easy_button" style="cursor: pointer;">&#x27f3;</button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="child-div" style="float: right;">
+                        <table id="mid-table" style="width:95%; border: 1px solid black; border-radius: 5px;">
+                            <tr id = "ptable-tr">
+                                <th id = "mid_title_header_text" style="text-align: center; background-color: orange; width: 96%;"></th>
+                                <th id = "ptable-td" style="text-align: center; background-color: orange;">
+                                    <button title="Reload Different Problems" id="mid_button" style="cursor: pointer;">&#x27f3;</button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="child-div">
+                        <table id="hard-table" style="width:95%; border: 1px solid black; border-radius: 5px;">
+                            <tr id = "ptable-tr">
+                                <th id = "hard_title_header_text" style="text-align: center; background-color: red; width: 96%;"></th>
+                                <th id = "ptable-td" style="text-align: center; background-color: red;">
+                                    <button title="Reload Different Problems" id="hard_button" style="cursor: pointer;">&#x27f3;</button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+            </div>
+		</div>
+        <br><br>
+        <hr>
+        <div class = "intro-content-2" style="font-family: 'Segoe UI'; font-size: medium; text-align: center; clear: both;">
+            <h1>CONTRIBUTIONS</h1>
+            To contribute please follow the instructions of this issue 
+            <a href='https://github.com/ssavi-ict/LC-Which-Company/issues/4' target="_blank">[CONTRIBUTE] Dear Contributors, Requesting Your Attention Regarding Company Contribution</a>.<br>
+        </div>
+        <br><br><hr><br><br>
+		<footer style="text-align: center; font-size: 13px;  width:80%; margin-left: 120px;">Made With &#10084; by <a href="https://www.linkedin.com/in/ssavi-ict/">Avik Sarkar</a></footer>
+        <br>
+    </div>
+</body>
+<script type="text/javascript" src="script/helper.js"></script>
+<script type="text/javascript" src="script/analyze_profile.js"></script>
+<script type="text/javascript" src="script/sde_sheet_script.js"></script>
+<script type="text/javascript" src="script/notices.script.js"></script>
+</html>
