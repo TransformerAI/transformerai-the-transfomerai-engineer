@@ -1,5 +1,8 @@
-# Two moving pointers, regardless of directions, moving dependently or independently;
-# A function that utilizes the entries referenced by the two pointers, which relates to the answer in a way;
+# Two moving pointers
+# 
+# regardless of directions, moving dependently or independently;
+# A function that utilizes the entries referenced by the two 
+# pointers, which relates to the answer in a way;
 # An easy way of deciding which pointer to move;
 # A way to process the array when the pointers are moved.
 #
@@ -15,19 +18,23 @@
 # Key points about using two pointers in the same direction: [1, 4, 5]  
 #
 # • Sliding window concept: This is the most common application, where the window 
-# size can dynamically adjust based on the problem's requirements while both pointers 
-# move forward. [1, 4, 5]  
+#   size can dynamically adjust based on the problem's requirements while both pointers 
+#   move forward. [1, 4, 5]  
 # • Maintaining relative positions: By keeping both pointers moving in the same 
-# direction, you can easily compare elements within the current window and make 
-# decisions based on their relative positions. [1, 2, 3]  
+#   direction, you can easily compare elements within the current window and make 
+#   decisions based on their relative positions. [1, 2, 3]  
 # • Optimized time complexity: Compared to nested loops, using two pointers in the 
-# same direction often leads to a linear time complexity, making it very efficient 
-# for large datasets. [1, 2, 6]  
+#   same direction often leads to a linear time complexity, making it very efficient 
+#   for large datasets. [1, 2, 6]
 #
 # Example scenarios where "two pointers same direction" might be used: [1, 2, 3] 
-# • Find the longest substring with at most k distinct characters: Both pointers move through the string, updating the window size as needed to maintain the constraint on distinct characters. [1, 2, 3]  
-# • Merge two sorted arrays: One pointer iterates through each sorted array, comparing elements and adding them to the result in sorted order. [1, 5, 7]  
-# • Find the maximum subarray sum: A sliding window is used to track the current sum as both pointers move through the array. [1, 4, 5]  
+# • Find the longest substring with at most k distinct characters: Both pointers 
+#   move through the string, updating the window size as needed to maintain the 
+#   constraint on distinct characters. [1, 2, 3]  
+# • Merge two sorted arrays: One pointer iterates through each sorted array, 
+#   comparing elements and adding them to the result in sorted order. [1, 5, 7]  
+# • Find the maximum subarray sum: A sliding window is used to track the current 
+#   sum as both pointers move through the array. [1, 4, 5]  
 
 
 
@@ -69,6 +76,9 @@ arr = [1, 3, 6, 7, 9]
 goal = 9
 results = twoSum(arr, goal)
 print(results)
+
+
+
 class TwoPointers():     
     def __init__(self, collection: List, functor: Callable[[Any], Any], mover: Callable, processor: Callable):
         self.left = None

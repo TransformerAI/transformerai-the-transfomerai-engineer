@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "leetcode-utils"
+version = "0.1.0"
+description = ""
+authors = ["Brian Abbott <briancabbott@gmail.com>"]
+readme = "README.md"
+packages = [{include = "leetcode_utils", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.11.10"
+gql = "^3.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+go = "leetcode_utils.graphql_client:main"
