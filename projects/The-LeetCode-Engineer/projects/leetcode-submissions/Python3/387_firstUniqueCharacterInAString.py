@@ -25,16 +25,14 @@ if __name__ == "__main__":
     
     s = "leetcode"
     output = 0
-    out = sol.firstUniqChar(s)
-    print(out)
+    assertEq(s, output, sol.firstUniqChar(s))
     
     s = "loveleetcode"
     output = 2
-    out = sol.firstUniqChar(s)
-    print(out)
-    
+    assertEq(s, output, sol.firstUniqChar(s))
+
     s = "aabb"
     output = -1
-    out = sol.firstUniqChar(s)
-    print(out)
+    assertEq(s, output, sol.firstUniqChar(s))
+
  
