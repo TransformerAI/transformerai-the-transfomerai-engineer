@@ -1,8 +1,9 @@
+from typing import List
 
 from utils_code.test import assertEq
 
 class Solution:
-    """_summary_
+    """
     Given a string s, find the length of the longest substring 
     without repeating characters.
     """
