@@ -3,7 +3,7 @@ from typing import List
 from utils_code.test import assertEq
 
 class Solution:    
-    """_summary_
+    """
     Roman numerals are represented by seven different 
     symbols: I, V, X, L, C, D and M.
 

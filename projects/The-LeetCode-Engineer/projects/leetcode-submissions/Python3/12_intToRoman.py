@@ -2,7 +2,7 @@ from typing import List
 
 from utils_code.test import assertEq
 
-class Solution:
+class Solution():
     """
     Seven different symbols represent Roman numerals with the
     following values:
