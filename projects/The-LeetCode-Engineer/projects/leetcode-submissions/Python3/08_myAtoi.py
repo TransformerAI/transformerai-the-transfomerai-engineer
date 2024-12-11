@@ -2,7 +2,7 @@
 from utils_code.test import assertEq
 
 class Solution:
-    """_summary_
+    """
     Implement the myAtoi(string s) function, which converts 
     a string to a 32-bit signed integer.
 
