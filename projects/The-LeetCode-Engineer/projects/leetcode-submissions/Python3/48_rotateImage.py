@@ -4,6 +4,14 @@ from typing import List
 from utils_code.test import assertEq
 
 class Solution():
+    """
+    You are given an n x n 2D matrix representing an image, 
+    rotate the image by 90 degrees (clockwise).
+
+    You have to rotate the image in-place, which means you 
+    have to modify the input 2D matrix directly. 
+    DO NOT allocate another 2D matrix and do the rotation.
+    """
     def rotate(self, matrix: List[List[int]]):
         left, right = 0, len(matrix) - 1
         while left < right:
@@ -21,19 +29,24 @@ class Solution():
             
             
 if __name__ == "__main__":
-    matrix = [[1,2,3],[4,5,6],[7,8,9]]
-    expected = [[7,4,1],[8,5,2],[9,6,3]]
-    pprint.pprint(matrix)
-    s = Solution()
-    s.rotate(matrix)
-    pprint.pprint(matrix)
-    pprint.pprint(expected)
+    sol = Solution()
+
+    matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+    output = [
+        [7,4,1],
+        [8,5,2],
+        [9,6,3]
+    ]
+    assertEq([[1,2,3],[4,5,6],[7,8,9]], [[7,4,1],[8,5,2],[9,6,3]], sol.rotate(matrix))
     
-    print("\n")
     
     matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
-    expected = [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
-    pprint.pprint(matrix)
-    s.rotate(matrix)
-    pprint.pprint(matrix)
-    pprint.pprint(expected)
+    output = [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+    assertEq(matrix, output, sol.rotate(matrix))
+    
+    
+    

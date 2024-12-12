@@ -1,3 +1,5 @@
+
+import collections
 from typing import List
 
 from utils_code.test import assertEq
@@ -5,6 +7,8 @@ from utils_code.test import assertEq
 
 
 class Solution():
+    """
+    """
     def numIslands(self, grid: List[List[str]]):
         if not grid:
             return 0

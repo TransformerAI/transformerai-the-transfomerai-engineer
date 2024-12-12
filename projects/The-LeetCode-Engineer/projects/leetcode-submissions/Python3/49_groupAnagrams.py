@@ -3,6 +3,10 @@ from utils_code.test import assertEq
 from collections import defaultdict
 
 class Solution:
+    """
+    Given an array of strings strs, group the anagrams
+    together. You can return the answer in any order.
+    """
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # self.handleConstraints(strs)
         results = defaultdict(list)
@@ -16,27 +20,18 @@ class Solution:
     
     
 if __name__ == "__main__":
-    s = Solution()
+    sol = Solution()
     
     strs = ["eat","tea","tan","ate","nat","bat"]
     output = [["bat"],["nat","tan"],["ate","eat","tea"]]
-    out = s.groupAnagrams(strs)
-    print(strs)
-    print(out)
-    print(output == out)
+    assertEq(strs, output, sol.groupAnagrams(strs))
 
     strs = [""]
     output = [[""]]
-    out = s.groupAnagrams(strs)
-    print(strs)
-    print(out)
-    print(output == out)
+    assertEq(strs, output, sol.groupAnagrams(strs))
     
     strs = ["a"]
     output = [["a"]]
-    out = s.groupAnagrams(strs)
-    print(strs)
-    print(out)
-    print(output == out)
+    assertEq(strs, output, sol.groupAnagrams(strs))
  
 
