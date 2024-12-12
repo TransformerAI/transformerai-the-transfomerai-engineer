@@ -15,25 +15,24 @@ class Solution:
     using the division operation.
     """
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        answer = []
+        res = [1] * (len(nums))
+        prefix = 1
         for i in range(len(nums)):
-            nl = list(nums)
-            nl.pop(i)
-            a = 1
-            for n in nl: 
-                a *= n
-            answer.append(a)
-        return answer
+            res[i] = prefix
+            prefix *= nums[i]
+        postfix = 1
+        for i in range(len(nums) - 1, -1, -1):
+            res[i] *= postfix
+            postfix *= nums[i]
+        return res
     
 if __name__ == "__main__":
     sol = Solution()
 
     nums = [1,2,3,4]
     output = [24,12,8,6]
-    out = sol.productExceptSelf(nums)
-    print(out)
+    assertEq(nums, output, sol.productExceptSelf(nums))
     
     nums = [-1,1,0,-3,3]
     output = [0,0,9,0,0]
-    out = sol.productExceptSelf(nums)
-    print(out)
+    assertEq(nums, output, sol.productExceptSelf(nums))
