@@ -74,6 +74,6 @@ if __name__ == '__main__':
     output = []
     assertEq(lists, output, listNodeToList(sol.mergeKLists(lists)))
 
-    # lists = listToListNode([[]])
-    # output = listToListNode([])
-    # assertEq(listNodeToList(lists), listNodeToList(output), listNodeToList(sol.mergeKLists(lists)))
+    lists = listToListNode([[]])
+    output = listToListNode([])
+    assertEq(listNodeToList(lists), listNodeToList(output), listNodeToList(sol.mergeKLists(lists)))

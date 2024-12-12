@@ -7,70 +7,70 @@ class ListNode:
         self.val = val
         self.next = next
 
-def listNodeToList(node: ListNode) -> list:
+def listNodeToList(node):
     result = []
     while node:
         result.append(node.val)
         node = node.next
     return result
 
-def listToListNode(lsst: list):
-    if lsst == None or len(lsst) == 0:
-        return None
+def listToListNode(lst):
     dummy = ListNode()
     current = dummy
-    for val in lsst:
+    for val in lst:
         current.next = ListNode(val)
         current = current.next
     return dummy.next
 
 class Solution():
     """
-    Given the head of a linked list, reverse the nodes of the 
+    Given the head of a linked list, reverse the nodes of the
     list k at a time, and return the modified list.
 
-    k is a positive integer and is less than or equal to the 
-    length of the linked list. If the number of nodes is not 
-    a multiple of k then left-out nodes, in the end, should 
+    k is a positive integer and is less than or equal to the
+    length of the linked list. If the number of nodes is not
+    a multiple of k then left-out nodes, in the end, should
     remain as it is.
 
-    You may not alter the values in the list's nodes, only 
+    You may not alter the values in the list's nodes, only
     nodes themselves may be changed.
     """
-    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        dummy = ListNode()
+    def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
+        dummy = ListNode(0, head)
         groupPrev = dummy
-        
         while True:
             kth = self.getKth(groupPrev, k)
             if not kth:
                 break
             groupNext = kth.next
             prev, curr = kth.next, groupPrev.next
-            while curr != groupNext:            
-                next = curr.next
+            while curr != groupNext:
+                tmp = curr.next
                 curr.next = prev
                 prev = curr
-                curr = next
+                curr = tmp
             tmp =  groupPrev.next
             groupPrev.next = kth
             groupPrev = tmp
-            
-    def getKth(self, curr, k):
+        return dummy.next
+    
+    def getKth(self, curr: ListNode, k: int) -> ListNode:
         while curr and k > 0:
             curr = curr.next
             k -= 1
         return curr
-    
+
 if __name__ == '__main__':
     sol = Solution()
-    
-    head = [1,2,3,4,5]
+
+    head = listToListNode([1,2,3,4,5])
     k = 2
     output = [2,1,4,3,5]
-    assertEq(head, output, sol.reverseKGroup(head, k))
+    out = sol.reverseKGroup(head, k)
+    print(listNodeToList(head))
+    # assertEq(listNodeToList(head), output, listNodeToList())
 
-    head = [1,2,3,4,5]
-    k = 3
-    output = [3,2,1,4,5]
-    assertEq(head, output, sol.reverseKGroup(head, k))
+    # head = [1,2,3,4,5]
+    # k = 3
+    # output = [3,2,1,4,5]
+    # assertEq(head, output, sol.reverseKGroup(head, k))

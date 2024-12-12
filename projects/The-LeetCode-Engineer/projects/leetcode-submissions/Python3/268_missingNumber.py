@@ -10,17 +10,11 @@ class Solution:
     is missing from the array.
     """
     def missingNumber(self, nums: List[int]) -> int:
-        if nums[-1] != len(nums):
-            return len(nums)
+        res = len(nums)
+        for i in range(len(nums)):
+            res += (i - nums[i])
         
-        arr = [False] * len(nums)
-        nums.sort()
-        for n in range(len(nums)):
-            if n == nums[n]:
-                arr[n] = True
-            else: 
-                return n
-        
+        return res
 
  
 if __name__ == "__main__":
