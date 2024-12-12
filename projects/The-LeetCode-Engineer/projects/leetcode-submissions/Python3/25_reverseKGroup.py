@@ -7,6 +7,23 @@ class ListNode:
         self.val = val
         self.next = next
 
+def listNodeToList(node: ListNode) -> list:
+    result = []
+    while node:
+        result.append(node.val)
+        node = node.next
+    return result
+
+def listToListNode(lsst: list):
+    if lsst == None or len(lsst) == 0:
+        return None
+    dummy = ListNode()
+    current = dummy
+    for val in lsst:
+        current.next = ListNode(val)
+        current = current.next
+    return dummy.next
+
 class Solution():
     """
     Given the head of a linked list, reverse the nodes of the 
@@ -21,7 +38,29 @@ class Solution():
     nodes themselves may be changed.
     """
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        pass
+        dummy = ListNode()
+        groupPrev = dummy
+        
+        while True:
+            kth = self.getKth(groupPrev, k)
+            if not kth:
+                break
+            groupNext = kth.next
+            prev, curr = kth.next, groupPrev.next
+            while curr != groupNext:            
+                next = curr.next
+                curr.next = prev
+                prev = curr
+                curr = next
+            tmp =  groupPrev.next
+            groupPrev.next = kth
+            groupPrev = tmp
+            
+    def getKth(self, curr, k):
+        while curr and k > 0:
+            curr = curr.next
+            k -= 1
+        return curr
     
 if __name__ == '__main__':
     sol = Solution()
