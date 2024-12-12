@@ -26,7 +26,6 @@ class Solution:
     Return the integer as the final result.
     """
     def myAtoi(self, s: str) -> int:
-
         s = s.lstrip()
         if not s:
             return 0
