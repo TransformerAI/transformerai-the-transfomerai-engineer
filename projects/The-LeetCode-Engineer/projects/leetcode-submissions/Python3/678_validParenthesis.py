@@ -19,21 +19,20 @@ class Solution:
     parenthesis '(' or an empty string "".
     """
     def checkValidString(self, s: str) -> bool:
-        stack = []
-        close_to_open = {
-            ")": "(", 
-            "]" : "[", 
-            "}" : "{"
-        }
+        leftMin, leftMax = 0, 0
         for c in s:
-            if c in close_to_open:
-                if stack and stack[-1] == close_to_open[c]:
-                    stack.pop()
-                else:
-                    return False
+            if c == "(":
+                leftMin += 1
+                leftMax += 1
+            elif c == ")":
+                leftMin, leftMax = leftMin - 1, leftMax - 1
             else:
-                stack.append(c)
-        return True if not stack else False
+                leftMin, leftMax = leftMin -1, leftMax + 1
+            if leftMax < 0:
+                return False
+            if leftMin < 0:
+                leftMin = 0
+        return leftMin == 0
     
     
     
