@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 from utils_code.test import assertEq
-
+from collections import deque
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -14,9 +14,22 @@ class Solution():
     traversal of its nodes' values. (i.e., from left to right, then 
     right to left for the next level and alternate between).
     """
-    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        pass
-    
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+        res = []
+        q = deque([root] if root else [])    
+        while q:
+            level = []
+            for i in range(len(q)):
+                n = q.popleft()
+                level.append(n.val)
+                if n.left:
+                    q.append(n.left)
+                if n.right:
+                    q.append(n.right)
+            level = list(reversed(level)) if len(res) % 2 else level
+            res.append(level)
+        return res
+            
 if __name__ == '__main__':
     sol = Solution()
     
